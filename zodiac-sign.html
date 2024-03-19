@@ -1,0 +1,492 @@
+<!-- Write a programe to findout zodiac sign of user and peform matchmaking  -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zodiac Sign</title>
+  </head>
+
+  <body>
+    <script>
+      var male_month = parseInt(prompt("Enter Male Birth Month"));
+      var male_date = parseInt(prompt("Enter Male Birth Date"));
+
+      console.log("Male Month is :" + male_month);
+      console.log("Male Date is :" + male_date);
+
+      var female_month = parseInt(prompt("Enter Female Birth Month"));
+      var female_date = parseInt(prompt("Enter Female Birth Date"));
+
+      console.log(" Female Month is :" + female_month);
+      console.log(" Female Date is :" + female_date);
+
+      var male_sign = 0;
+      var female_sign = 0;
+
+      if (
+        (male_month == 3 && male_date >= 21 && male_date <= 31) ||
+        (male_month == 4 && male_date >= 1 && male_date <= 19)
+      ) {
+        console.log("your zodiac sign is Aries");
+        male_sign = "aries";
+      } else if (
+        (male_month == 4 && male_date >= 20 && male_date <= 30) ||
+        (male_month == 5 && male_date >= 1 && male_date <= 20)
+      ) {
+        console.log("your zodiac sign is Taurus");
+        male_sign = "taurus";
+      } else if (
+        (male_month == 5 && male_date >= 21 && male_date <= 31) ||
+        (male_month == 6 && male_date >= 1 && male_date <= 20)
+      ) {
+        console.log("your zodiac sign is Gemini");
+        male_sign = "gemini";
+      } else if (
+        (male_month == 6 && male_date >= 21 && male_date <= 30) ||
+        (male_month == 7 && male_date >= 1 && male_date <= 22)
+      ) {
+        console.log("your zodiac sign is Cancer");
+        male_sign = "cancer";
+      } else if (
+        (male_month == 7 && male_date >= 23 && male_date <= 31) ||
+        (male_month == 8 && male_date >= 1 && male_date <= 22)
+      ) {
+        console.log("your zodiac sign is Leo");
+        male_sign = "leo";
+      } else if (
+        (male_month == 8 && male_date >= 23 && male_date <= 31) ||
+        (male_month == 9 && male_date >= 1 && male_date <= 22)
+      ) {
+        console.log("your zodiac sign is Virgo");
+        male_sign = "virgo";
+      } else if (
+        (male_month == 9 && male_date >= 23 && male_date <= 30) ||
+        (male_month == 10 && male_date >= 1 && male_date <= 22)
+      ) {
+        console.log("your zodiac sign is Libra");
+        male_sign = "libra";
+      } else if (
+        (male_month == 10 && male_date >= 23 && male_date <= 31) ||
+        (male_month == 11 && male_date >= 1 && male_date <= 21)
+      ) {
+        console.log("your zodiac sign is Scorpio");
+        male_sign = "scorpio";
+      } else if (
+        (male_month == 11 && male_date >= 22 && male_date <= 30) ||
+        (male_month == 12 && male_date >= 1 && male_date <= 21)
+      ) {
+        console.log("your zodiac sign is Sagittarius");
+        male_sign = "sagittarius";
+      } else if (
+        (male_month == 12 && male_date >= 22 && male_date <= 31) ||
+        (male_month == 1 && male_date >= 1 && male_date <= 19)
+      ) {
+        console.log("your zodiac sign is Capricorn");
+        male_sign = "capricorn";
+      } else if (
+        (male_month == 1 && male_date >= 20 && male_date <= 31) ||
+        (male_month == 2 && male_date >= 1 && male_date <= 18)
+      ) {
+        console.log("your zodiac sign is Aquarius");
+        male_sign = "aquarius";
+      } else if (
+        (male_month == 2 && male_date >= 19 && male_date <= 29) ||
+        (male_month == 3 && male_date >= 1 && male_date <= 20)
+      ) {
+        console.log("your zodiac sign is Pisces");
+        male_sign = "pisces";
+      } else {
+        console.log("Invalid Input ");
+      }
+
+      if (
+        (female_month == 3 && female_date >= 21 && female_date <= 31) ||
+        (female_month == 4 && female_date >= 1 && female_date <= 19)
+      ) {
+        console.log("your zodiac sign is Aries");
+        female_sign = "aries";
+      } else if (
+        (female_month == 4 && female_date >= 20 && female_date <= 30) ||
+        (female_month == 5 && female_date >= 1 && female_date <= 20)
+      ) {
+        console.log("your zodiac sign is Taurus");
+        female_sign = "taurus";
+      } else if (
+        (female_month == 5 && female_date >= 21 && female_date <= 31) ||
+        (female_month == 6 && female_date >= 1 && female_date <= 20)
+      ) {
+        console.log("your zodiac sign is Gemini");
+        female_sign = "gemini";
+      } else if (
+        (female_month == 6 && female_date >= 21 && female_date <= 30) ||
+        (female_month == 7 && female_date >= 1 && female_date <= 22)
+      ) {
+        console.log("your zodiac sign is Cancer");
+        female_sign = "cancer";
+      } else if (
+        (female_month == 7 && female_date >= 23 && female_date <= 31) ||
+        (female_month == 8 && female_date >= 1 && female_date <= 22)
+      ) {
+        console.log("your zodiac sign is Leo");
+        female_sign = "leo";
+      } else if (
+        (female_month == 8 && female_date >= 23 && female_date <= 31) ||
+        (female_month == 9 && female_date >= 1 && female_date <= 22)
+      ) {
+        console.log("your zodiac sign is Virgo");
+        female_sign = "virgo";
+      } else if (
+        (female_month == 9 && female_date >= 23 && female_date <= 30) ||
+        (female_month == 10 && female_date >= 1 && female_date <= 22)
+      ) {
+        console.log("your zodiac sign is Libra");
+        female_sign = "libra";
+      } else if (
+        (female_month == 10 && female_date >= 23 && female_date <= 31) ||
+        (female_month == 11 && female_date >= 1 && female_date <= 21)
+      ) {
+        console.log("your zodiac sign is Scorpio");
+        female_sign = "scorpio";
+      } else if (
+        (female_month == 11 && female_date >= 22 && female_date <= 30) ||
+        (female_month == 12 && female_date >= 1 && female_date <= 21)
+      ) {
+        console.log("your zodiac sign is Sagittarius");
+        female_sign = "sagittarius";
+      } else if (
+        (female_month == 12 && female_date >= 22 && female_date <= 31) ||
+        (female_month == 1 && female_date >= 1 && female_date <= 19)
+      ) {
+        console.log("your zodiac sign is Capricorn");
+        female_sign = "capricorn";
+      } else if (
+        (female_month == 1 && female_date >= 20 && female_date <= 31) ||
+        (female_month == 2 && female_date >= 1 && female_date <= 18)
+      ) {
+        console.log("your zodiac sign is Aquarius");
+        female_sign = "aquarius";
+      } else if (
+        (female_month == 2 && female_date >= 19 && female_date <= 29) ||
+        (female_month == 3 && female_date >= 1 && female_date <= 20)
+      ) {
+        console.log("your zodiac sign is Pisces");
+        female_sign = "pisces";
+      } else {
+        console.log("Invalid input ");
+      }
+      // 1
+      if (male_sign == "aries" && female_sign == "aries") {
+        console.log("They Favourable");
+      } else if (male_sign == "taurus" && female_sign == "aries") {
+        console.log("They Less Favourable");
+      } else if (male_sign == "gemini" && female_sign == "aries") {
+        console.log("They Favourable");
+      } else if (male_sign == "cancer" && female_sign == "aries") {
+        console.log("Critical relation");
+      } else if (male_sign == "leo" && female_sign == "aries") {
+        console.log("They Favourable");
+      } else if (male_sign == "virgo" && female_sign == "aries") {
+        console.log("They Less Favourable");
+      } else if (male_sign == "libra" && female_sign == "aries") {
+        console.log("They Favourable");
+      } else if (male_sign == "scorpio" && female_sign == "aries") {
+        console.log("They Less Favourable");
+      } else if (male_sign == "sagittarius" && female_sign == "aries") {
+        console.log("They Favourable");
+      } else if (male_sign == "capricorn" && female_sign == "aries") {
+        console.log("Critical relation");
+      } else if (male_sign == "aquarius" && female_sign == "aries") {
+        console.log("They Favourable");
+      } else if (male_sign == "pisces" && female_sign == "aries") {
+        console.log("They Less Favourable");
+      }
+      // 2
+      else if (male_sign == "aries" && female_sign == "taurus") {
+        console.log("They Less Favourable");
+      } else if (male_sign == "taurus" && female_sign == "taurus") {
+        console.log("They Favourable");
+      } else if (male_sign == "gemini" && female_sign == "taurus") {
+        console.log("They Less Favourable");
+      } else if (male_sign == "cancer" && female_sign == "taurus") {
+        console.log("They Favourable");
+      } else if (male_sign == "leo" && female_sign == "taurus") {
+        console.log("Critical relation");
+      } else if (male_sign == "virgo" && female_sign == "taurus") {
+        console.log("They Favourable");
+      } else if (male_sign == "libra" && female_sign == "taurus") {
+        console.log("They Less Favourable");
+      } else if (male_sign == "scorpio" && female_sign == "taurus") {
+        console.log("They Favourable");
+      } else if (male_sign == "sagittarius" && female_sign == "taurus") {
+        console.log("They Less Favourable");
+      } else if (male_sign == "capricorn" && female_sign == "taurus") {
+        console.log("They Favourable");
+      } else if (male_sign == "aquarius" && female_sign == "taurus") {
+        console.log("Critical relation");
+      } else if (male_sign == "pisces" && female_sign == "taurus") {
+        console.log("They Favourable");
+      }
+      // 3
+      else if (male_sign == "aries" && female_sign == "gimini") {
+        console.log("They Favourable");
+      } else if (male_sign == "taurus" && female_sign == "gimini") {
+        console.log("They Less Favourable");
+      } else if (male_sign == "gemini" && female_sign == "gimini") {
+        console.log("They Favourable");
+      } else if (male_sign == "cancer" && female_sign == "gimini") {
+        console.log("They Less Favourable");
+      } else if (male_sign == "leo" && female_sign == "gimini") {
+        console.log("They Favourable");
+      } else if (male_sign == "virgo" && female_sign == "gimini") {
+        console.log("Critical relation");
+      } else if (male_sign == "libra" && female_sign == "gimini") {
+        console.log("They Favourable");
+      } else if (male_sign == "scorpio" && female_sign == "gimini") {
+        console.log("They Less Favourable");
+      } else if (male_sign == "sagittarius" && female_sign == "gimini") {
+        console.log("They Favourable");
+      } else if (male_sign == "capricorn" && female_sign == "gimini") {
+        console.log("Critical relation");
+      } else if (male_sign == "aquarius" && female_sign == "gimini") {
+        console.log("They Favourable");
+      } else if (male_sign == "pisces" && female_sign == "gimini") {
+        console.log("Critical relation");
+      }
+      // 4
+      else if (male_sign == "aries" && female_sign == "cancer") {
+        console.log("Critical relation");
+      } else if (male_sign == "taurus" && female_sign == "cancer") {
+        console.log("They Favourable");
+      } else if (male_sign == "gemini" && female_sign == "cancer") {
+        console.log("They Less Favourable");
+      } else if (male_sign == "cancer" && female_sign == "cancer") {
+        console.log("They Favourable");
+      } else if (male_sign == "leo" && female_sign == "cancer") {
+        console.log("They Less Favourable");
+      } else if (male_sign == "virgo" && female_sign == "cancer") {
+        console.log("They Favourable");
+      } else if (male_sign == "libra" && female_sign == "cancer") {
+        console.log("Critical relation");
+      } else if (male_sign == "scorpio" && female_sign == "cancer") {
+        console.log("They Favourable");
+      } else if (male_sign == "sagittarius" && female_sign == "cancer") {
+        console.log("They Less Favourable");
+      } else if (male_sign == "capricorn" && female_sign == "cancer") {
+        console.log("They Favourable");
+      } else if (male_sign == "aquarius" && female_sign == "cancer") {
+        console.log("They Less Favourable");
+      } else if (male_sign == "pisces" && female_sign == "cancer") {
+        console.log("They Favourable");
+      }
+      // 5
+      else if (male_sign == "aries" && female_sign == "leo") {
+        console.log("They Favourable");
+      } else if (male_sign == "taurus" && female_sign == "leo") {
+        console.log("Critical relation");
+      } else if (male_sign == "gemini" && female_sign == "leo") {
+        console.log("They Favourable");
+      } else if (male_sign == "cancer" && female_sign == "leo") {
+        console.log("They Less Favourable");
+      } else if (male_sign == "leo" && female_sign == "leo") {
+        console.log("They Favourable");
+      } else if (male_sign == "virgo" && female_sign == "leo") {
+        console.log("They Less Favourable");
+      } else if (male_sign == "libra" && female_sign == "leo") {
+        console.log("They Favourable");
+      } else if (male_sign == "scorpio" && female_sign == "leo") {
+        console.log("Critical relation");
+      } else if (male_sign == "sagittarius" && female_sign == "leo") {
+        console.log("They Favourable");
+      } else if (male_sign == "capricorn" && female_sign == "leo") {
+        console.log("Critical relation");
+      } else if (male_sign == "aquarius" && female_sign == "leo") {
+        console.log("They Favourable");
+      } else if (male_sign == "pisces" && female_sign == "leo") {
+        console.log("They Less Favourable");
+      }
+      // 6
+      else if (male_sign == "aries" && female_sign == "virgo") {
+        console.log("They Less Favourable");
+      } else if (male_sign == "taurus" && female_sign == "virgo") {
+        console.log("They Favourable");
+      } else if (male_sign == "gemini" && female_sign == "virgo") {
+        console.log("Critical relation");
+      } else if (male_sign == "cancer" && female_sign == "virgo") {
+        console.log("They Favourable");
+      } else if (male_sign == "leo" && female_sign == "virgo") {
+        console.log("They Less Favourable");
+      } else if (male_sign == "virgo" && female_sign == "virgo") {
+        console.log("They Favourable");
+      } else if (male_sign == "libra" && female_sign == "virgo") {
+        console.log("They Less Favourable");
+      } else if (male_sign == "scorpio" && female_sign == "virgo") {
+        console.log("They Favourable");
+      } else if (male_sign == "sagittarius" && female_sign == "virgo") {
+        console.log("Critical relation");
+      } else if (male_sign == "capricorn" && female_sign == "virgo") {
+        console.log("They Favourable");
+      } else if (male_sign == "aquarius" && female_sign == "virgo") {
+        console.log("They Less  Favourable");
+      } else if (male_sign == "pisces" && female_sign == "virgo") {
+        console.log("They Favourable");
+      }
+      // 7
+      else if (male_sign == "aries" && female_sign == "libra") {
+        console.log("They Favourable");
+      } else if (male_sign == "taurus" && female_sign == "libra") {
+        console.log("They Less Favourable");
+      } else if (male_sign == "gemini" && female_sign == "libra") {
+        console.log("They Favourable");
+      } else if (male_sign == "cancer" && female_sign == "libra") {
+        console.log("Critical relation");
+      } else if (male_sign == "leo" && female_sign == "libra") {
+        console.log("They Favourable");
+      } else if (male_sign == "virgo" && female_sign == "libra") {
+        console.log("They Less Favourable");
+      } else if (male_sign == "libra" && female_sign == "libra") {
+        console.log("They Favourable");
+      } else if (male_sign == "scorpio" && female_sign == "libra") {
+        console.log("They Less Favourable");
+      } else if (male_sign == "sagittarius" && female_sign == "libra") {
+        console.log("They Favourable");
+      } else if (male_sign == "capricorn" && female_sign == "libra") {
+        console.log("Critical relation");
+      } else if (male_sign == "aquarius" && female_sign == "libra") {
+        console.log("They Favourable");
+      } else if (male_sign == "pisces" && female_sign == "libra") {
+        console.log("They Less Favourable");
+      }
+      // 8
+      else if (male_sign == "aries" && female_sign == "scorpio") {
+        console.log("They Less Favourable");
+      } else if (male_sign == "taurus" && female_sign == "scorpio") {
+        console.log("They Favourable");
+      } else if (male_sign == "gemini" && female_sign == "scorpio") {
+        console.log("They Less Favourable");
+      } else if (male_sign == "cancer" && female_sign == "scorpio") {
+        console.log("They Favourable");
+      } else if (male_sign == "leo" && female_sign == "scorpio") {
+        console.log("Critical situation");
+      } else if (male_sign == "virgo" && female_sign == "scorpio") {
+        console.log("They Favourable");
+      } else if (male_sign == "libra" && female_sign == "scorpio") {
+        console.log("They Less Favourable");
+      } else if (male_sign == "scorpio" && female_sign == "scorpio") {
+        console.log("They Favourable");
+      } else if (male_sign == "sagittarius" && female_sign == "scorpio") {
+        console.log("They Less Favourable");
+      } else if (male_sign == "capricorn" && female_sign == "scorpio") {
+        console.log("They Favourable");
+      } else if (male_sign == "aquarius" && female_sign == "scorpio") {
+        console.log("Critical situation");
+      } else if (male_sign == "pisces" && female_sign == "scorpio") {
+        console.log("They Favourable");
+      }
+      // 9
+      else if (male_sign == "aries" && female_sign == "sagittarius") {
+        console.log("They Favourable");
+      } else if (male_sign == "taurus" && female_sign == "sagittarius") {
+        console.log("They Less Favourable");
+      } else if (male_sign == "gemini" && female_sign == "sagittarius") {
+        console.log("They Favourable");
+      } else if (male_sign == "cancer" && female_sign == "sagittarius") {
+        console.log("They Less Favourable");
+      } else if (male_sign == "leo" && female_sign == "sagittarius") {
+        console.log("They Favourable");
+      } else if (male_sign == "virgo" && female_sign == "sagittarius") {
+        console.log("Critical relation");
+      } else if (male_sign == "libra" && female_sign == "sagittarius") {
+        console.log("They Favourable");
+      } else if (male_sign == "scorpio" && female_sign == "sagittarius") {
+        console.log("They Less Favourable");
+      } else if (male_sign == "sagittarius" && female_sign == "sagittarius") {
+        console.log("They Favourable");
+      } else if (male_sign == "capricorn" && female_sign == "sagittarius") {
+        console.log("Critical relation");
+      } else if (male_sign == "aquarius" && female_sign == "sagittarius") {
+        console.log("They Favourable");
+      } else if (male_sign == "pisces" && female_sign == "sagittarius") {
+        console.log("Critical relation");
+      }
+      // 10
+      else if (male_sign == "aries" && female_sign == "capricorn") {
+        console.log("Critical relation");
+      } else if (male_sign == "taurus" && female_sign == "capricorn") {
+        console.log("They Favourable");
+      } else if (male_sign == "gemini" && female_sign == "capricorn") {
+        console.log("They Less Favourable");
+      } else if (male_sign == "capricorn" && female_sign == "capricorn") {
+        console.log("They Favourable");
+      } else if (male_sign == "leo" && female_sign == "capricorn") {
+        console.log("They Less Favourable");
+      } else if (male_sign == "virgo" && female_sign == "capricorn") {
+        console.log("They Favourable");
+      } else if (male_sign == "libra" && female_sign == "capricorn") {
+        console.log("Critical relation");
+      } else if (male_sign == "scorpio" && female_sign == "capricorn") {
+        console.log("They Favourable");
+      } else if (male_sign == "sagittarius" && female_sign == "capricorn") {
+        console.log("They Less Favourable");
+      } else if (male_sign == "capricorn" && female_sign == "capricorn") {
+        console.log("They Favourable");
+      } else if (male_sign == "aquarius" && female_sign == "capricorn") {
+        console.log("They Less Favourable");
+      } else if (male_sign == "pisces" && female_sign == "capricorn") {
+        console.log("They Favourable");
+      }
+      // 11
+      else if (male_sign == "aries" && female_sign == "aquarius") {
+        console.log("They Favourable");
+      } else if (male_sign == "taurus" && female_sign == "aquarius") {
+        console.log("Critical relation");
+      } else if (male_sign == "gemini" && female_sign == "aquarius") {
+        console.log("They Favourable");
+      } else if (male_sign == "cancer" && female_sign == "aquarius") {
+        console.log("They Less Favourable");
+      } else if (male_sign == "aquarius" && female_sign == "aquarius") {
+        console.log("They Favourable");
+      } else if (male_sign == "virgo" && female_sign == "aquarius") {
+        console.log("They Less Favourable");
+      } else if (male_sign == "libra" && female_sign == "aquarius") {
+        console.log("They Favourable");
+      } else if (male_sign == "scorpio" && female_sign == "aquarius") {
+        console.log("Critical relation");
+      } else if (male_sign == "sagittarius" && female_sign == "aquarius") {
+        console.log("They Favourable");
+      } else if (male_sign == "capricorn" && female_sign == "aquarius") {
+        console.log("Critical relation");
+      } else if (male_sign == "aquarius" && female_sign == "aquarius") {
+        console.log("They Favourable");
+      } else if (male_sign == "pisces" && female_sign == "aquarius") {
+        console.log("They Less Favourable");
+      }
+      // 12
+      else if (male_sign == "aries" && female_sign == "pisces") {
+        console.log("They Less Favourable");
+      } else if (male_sign == "taurus" && female_sign == "pisces") {
+        console.log("They Favourable");
+      } else if (male_sign == "gemini" && female_sign == "pisces") {
+        console.log("Critical relation");
+      } else if (male_sign == "cancer" && female_sign == "pisces") {
+        console.log("They Favourable");
+      } else if (male_sign == "leo" && female_sign == "pisces") {
+        console.log("Critical relation");
+      } else if (male_sign == "pisces" && female_sign == "pisces") {
+        console.log("They Favourable");
+      } else if (male_sign == "libra" && female_sign == "pisces") {
+        console.log("They Less Favourable");
+      } else if (male_sign == "scorpio" && female_sign == "pisces") {
+        console.log("They Favourable");
+      } else if (male_sign == "sagittarius" && female_sign == "pisces") {
+        console.log("Critical relation");
+      } else if (male_sign == "capricorn" && female_sign == "pisces") {
+        console.log("They Favourable");
+      } else if (male_sign == "aquarius" && female_sign == "pisces") {
+        console.log("They Less  Favourable");
+      } else if (male_sign == "pisces" && female_sign == "pisces") {
+        console.log("They Favourable");
+      }
+    </script>
+  </body>
+</html>
