@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form 2</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+</head>
+
+<body>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-8 offset-2">
+                <div class="card shadow mt-5">
+                    <div class="card-header text-bg-success">
+                        <h1>Student Information</h1>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-6">
+                                <label for="name" class="form-label">Enter Your Name</label>
+                                <input type="text" id="name" name="name" class="form-control">
+                            </div>
+                            <div class="col-6">
+                                <label for="age" class="form-label">Enter Your Age</label>
+                                <input type="number" id="age" name="age" class="form-control">
+                            </div>
+                            <div class="col-12 mt-3">
+                                <label for="course" class="form-label">Enter Your Course</label>
+                                <input type="text" id="course" name="course" class="form-control">
+                            </div>
+                            <div class="col-6 mt-3">
+                                <label for="date" class="form-label">Enter Start Date</label>
+                                <input type="date" id="date" name="date" class="form-control">
+                            </div>
+                            <div class="col-6 mt-3">
+                                <label for="time" class="form-label">Enter Time</label>
+                                <input type="time" id="time" name="time" class="form-control">
+                            </div>
+                            <div class="text-end mt-3 ">
+                                <input type="submit" class="btn btn-success" value="Add Student"
+                                    onclick="addStudent();">
+                                <input type="reset" class="btn btn-warning" value="Clear All" onclick="clearAll();">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-10 offset-1">
+                <div class="card my-5 shadow">
+                    <div class="card-header h2 text-bg-success">View Student</div>
+                    <div class="card-body " id="tableDiv">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var studInfo = '';
+        var studCount = 0;
+        function addStudent() {
+
+            console.log("Add student called...");
+            var name = 0, age = 0, course = 0, date = 0, time = 0;
+
+            name = document.getElementById("name").value;
+            age = document.getElementById("age").value;
+            course = document.getElementById("course").value;
+            date = document.getElementById("date").value;
+            time = document.getElementById("time").value;
+
+            console.log(`The value of name is ${name}`);
+            console.log(`The value of age is ${age}`);
+            console.log(`The value of course is ${course}`);
+            console.log(`The value of date is ${date}`);
+            console.log(`The value of time is ${time}`);
+
+            studCount++;
+            studInfo += `<tr>
+                <td>${studCount}</td>
+                <td>${name}</td>
+                <td>${age}</td>
+                <td>${course}</td>
+                <td>${date}</td>
+                <td>${time}</td>
+            </tr>`
+
+            var table = ` <table class="table table-bordered table-striped table-hover">
+                            <tr>
+                                <td>Sr.no</td>
+                                <td>Name</td>
+                                <td>Age</td>
+                                <td>Course Name</td>
+                                <td>Start Date</td>
+                                <td>Start Time</td>
+                            </tr>
+                            ${studInfo}
+                        </table>`
+
+            document.getElementById("tableDiv").innerHTML = table;
+
+        }
+        function clearAll() {
+            document.getElementById("name").value = '';
+            document.getElementById("age").value = '';
+            document.getElementById("course").value = '';
+            document.getElementById("date").value = '';
+            document.getElementById("time").value = '';
+        }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
